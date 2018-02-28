@@ -45,9 +45,38 @@ $ rails generate rspec:install
 ```
 This will create the following files and directories 
 ```sh
-      create  .rspec
-      create  spec
-      create  spec/spec_helper.rb
-      create  spec/rails_helper.rb
+  create  .rspec
+  create  spec
+  create  spec/spec_helper.rb
+  create  spec/rails_helper.rb
 ```
 
+### Structure of the application
+
+```sh
+- Articles
+	- ID
+	- Title
+	- Body
+
+- User
+	- ID
+	- Email
+	- Password
+
+- Comments
+	- ID
+	- Body
+	- User_ID
+	- Acticle_ID
+```	
+
+
+### TOOLS
+
+I had used some tools for creting the wireframes for this blog pplication and i listed those tools below:
+
+| Plugin | README |
+| ------ | ------ |
+| Mockingbird | [https://gomockingbird.com/home][PlDb] |
+| dillinger | [https://dillinger.io/][PlGh] |
