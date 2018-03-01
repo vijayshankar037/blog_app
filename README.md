@@ -78,5 +78,7 @@ I had used some tools for creting the wireframes for this blog pplication and i 
 
 | Plugin | README |
 | ------ | ------ |
-| Mockingbird | [https://gomockingbird.com/home][PlDb] |
-| dillinger | [https://dillinger.io/][PlGh] |
+| Mockingbird | [https://gomockingbird.com/home]|
+| dillinger | [https://dillinger.io/] |
+
+

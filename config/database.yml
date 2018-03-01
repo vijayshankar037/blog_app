@@ -12,14 +12,15 @@
 default: &default
   adapter: mysql2
   encoding: utf8
+  username: "root"
+  password: "vj@1234$"
   pool: 5
-  username: ENV['DATABASE_USER']
-  password: ENV['DATABASE_PASSWORD']
   socket: /var/run/mysqld/mysqld.sock
 
 development:
   <<: *default
   database: blog_app_development
+  
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -27,7 +28,7 @@ development:
 test:
   <<: *default
   database: blog_app_test
-
+  
 # As with config/secrets.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
 # ever seen by anyone, they now have access to your database.
@@ -50,5 +51,3 @@ test:
 production:
   <<: *default
   database: blog_app_production
-  username: blog_app
-  password: <%= ENV['BLOG_APP_DATABASE_PASSWORD'] %>
